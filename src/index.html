@@ -1,136 +1,354 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <h1>PES University - CI/CD Course</h1>
+  <title>PES University - CI/CD Course</title>
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
   <div class="container">
 
-    <header>
-      <h1>PES University</h1>
-      <p class="subtitle">Software Engineering & DevOps Workshop</p>
-    </header>
+```
+<header>
+  <h1>PES University - CI/CD Course</h1>
+  <p class="subtitle">Software Engineering & DevOps Workshop</p>
+</header>
 
-    <!-- Navigation Tabs -->
-    <nav class="tabs" id="nav-tabs">
+<!-- Navigation Tabs -->
+<nav class="tabs" id="nav-tabs">
 
-      <button class="tab-btn active" onclick="showTab('pes')">
-        PES University
-      </button>
+  <button class="tab-btn active" onclick="showTab('pes')">
+    PES University
+  </button>
 
-      <button class="tab-btn" onclick="showTab('se')">
-        About Me
-      </button>
+  <button class="tab-btn" onclick="showTab('se')">
+    About Me
+  </button>
 
-      <button class="tab-btn" onclick="showTab('cicd')">
-        CI/CD Pipeline
-      </button>
+  <button class="tab-btn" onclick="showTab('devops')">
+    DevOps
+  </button>
 
-      <button class="tab-btn" onclick="showTab('instructable')">
-        Instructable
-      </button>
+  <button class="tab-btn" onclick="showTab('git')">
+    Git & GitHub
+  </button>
 
-    </nav>
+  <button class="tab-btn" onclick="showTab('cicd')">
+    CI/CD Pipeline
+  </button>
 
-    <!-- Tab Contents -->
-    <main class="content-box">
+  <button class="tab-btn" onclick="showTab('testing')">
+    Testing
+  </button>
 
-      <!-- PES University -->
-      <div id="pes" class="tab-content active">
-        <h2>PES University</h2>
+  <button class="tab-btn" onclick="showTab('workflow')">
+    GitHub Actions
+  </button>
 
-        <p>
-          Welcome to my Software Engineering and DevOps workshop website
-          at PES University.
-        </p>
+  <button class="tab-btn" onclick="showTab('instructable')">
+    Instructable
+  </button>
 
-        <p>
-          This website demonstrates the use of Git, GitHub, GitHub Actions,
-          CI/CD pipelines, and GitHub Pages.
-        </p>
-      </div>
+  <button class="tab-btn" onclick="showTab('contact')">
+    Contact
+  </button>
 
-
-      <!-- About Me -->
-      <div id="se" class="tab-content">
-        <h2>About Me</h2>
-
-        <p><strong>Name:</strong> Tanisha Mathur</p>
-        <p><strong>University:</strong> PES University</p>
-        <p><strong>Branch:</strong> Computer Science and Engineering</p>
-
-        <p>
-          I am a CSE student interested in software development,
-          DevOps, cloud technologies, and automation.
-        </p>
-      </div>
+</nav>
 
 
-      <!-- CI/CD Pipeline -->
-      <div id="cicd" class="tab-content">
-        <h2>CI/CD Pipeline</h2>
+<!-- Tab Contents -->
+<main class="content-box">
 
-        <p>
-          Continuous Integration (CI) automatically builds and tests
-          the code whenever changes are pushed to the repository.
-        </p>
+  <!-- PES University -->
+  <div id="pes" class="tab-content active">
 
-        <p>
-          Continuous Deployment (CD) automatically deploys the updated
-          website after the changes successfully pass the required checks.
-        </p>
+    <h2>PES University</h2>
 
-        <h3>Pipeline Flow</h3>
+    <p>
+      Welcome to my Software Engineering and DevOps workshop website
+      at PES University.
+    </p>
 
-        <p>
-          Developer → Git → GitHub → GitHub Actions → Build/Test → 
-          GitHub Pages
-        </p>
-      </div>
+    <p>
+      This website demonstrates the use of Git, GitHub, GitHub Actions,
+      CI/CD pipelines, automated testing, and GitHub Pages.
+    </p>
 
+    <h3>Workshop Objectives</h3>
 
-      <!-- Instructable -->
-      <div id="instructable" class="tab-content">
-        <h2>Instructable: GitHub Actions & GitHub Pages</h2>
+    <ul>
+      <li>Understand version control using Git.</li>
+      <li>Work with GitHub repositories.</li>
+      <li>Create automated CI/CD pipelines.</li>
+      <li>Write and execute test cases.</li>
+      <li>Deploy websites using GitHub Pages.</li>
+    </ul>
 
-        <h3>Step 1: Create a GitHub Repository</h3>
-        <p>
-          Create a repository on GitHub and upload the HTML and CSS files.
-        </p>
-
-        <h3>Step 2: Push the Code</h3>
-        <p>
-          Commit and push the website files to the GitHub repository.
-        </p>
-
-        <h3>Step 3: Configure GitHub Actions</h3>
-        <p>
-          A GitHub Actions workflow automatically runs whenever changes
-          are pushed to the repository.
-        </p>
-
-        <h3>Step 4: Deploy using GitHub Pages</h3>
-        <p>
-          After the workflow completes successfully, the website is
-          deployed and can be accessed through GitHub Pages.
-        </p>
-
-        <h3>Result</h3>
-        <p>
-          Any new changes pushed to the repository can automatically
-          trigger the CI/CD pipeline and update the deployed website.
-        </p>
-      </div>
-
-    </main>
   </div>
 
 
+  <!-- About Me -->
+  <div id="se" class="tab-content">
+
+    <h2>About Me</h2>
+
+    <p><strong>Name:</strong> Tanisha Mathur</p>
+    <p><strong>University:</strong> PES University</p>
+    <p><strong>Branch:</strong> Computer Science and Engineering</p>
+
+    <p>
+      I am a CSE student interested in software development,
+      DevOps, cloud technologies, automation, and continuous
+      integration and deployment.
+    </p>
+
+  </div>
+
+
+  <!-- DevOps -->
+  <div id="devops" class="tab-content">
+
+    <h2>What is DevOps?</h2>
+
+    <p>
+      DevOps is a combination of development and operations practices
+      that helps teams build, test, and deliver software faster and
+      more reliably.
+    </p>
+
+    <h3>Key Principles</h3>
+
+    <ul>
+      <li>Automation</li>
+      <li>Continuous Integration</li>
+      <li>Continuous Deployment</li>
+      <li>Continuous Testing</li>
+      <li>Monitoring</li>
+      <li>Collaboration</li>
+    </ul>
+
+    <h3>DevOps Lifecycle</h3>
+
+    <p>
+      Plan → Code → Build → Test → Release → Deploy → Operate → Monitor
+    </p>
+
+  </div>
+
+
+  <!-- Git & GitHub -->
+  <div id="git" class="tab-content">
+
+    <h2>Git & GitHub</h2>
+
+    <p>
+      Git is a distributed version control system used to track
+      changes in source code.
+    </p>
+
+    <p>
+      GitHub is a cloud-based platform that hosts Git repositories
+      and provides collaboration and automation features.
+    </p>
+
+    <h3>Important Git Commands</h3>
+
+    <ul>
+      <li><strong>git clone</strong> – Copy a repository locally.</li>
+      <li><strong>git status</strong> – Check repository status.</li>
+      <li><strong>git add</strong> – Stage changes.</li>
+      <li><strong>git commit</strong> – Save changes to Git history.</li>
+      <li><strong>git push</strong> – Upload changes to GitHub.</li>
+      <li><strong>git pull</strong> – Download latest changes.</li>
+    </ul>
+
+  </div>
+
+
+  <!-- CI/CD Pipeline -->
+  <div id="cicd" class="tab-content">
+
+    <h2>CI/CD Pipeline</h2>
+
+    <p>
+      Continuous Integration (CI) automatically builds and tests
+      the code whenever changes are pushed to the repository.
+    </p>
+
+    <p>
+      Continuous Deployment (CD) automatically deploys the updated
+      website after the changes successfully pass the required checks.
+    </p>
+
+    <h3>Pipeline Flow</h3>
+
+    <p>
+      Developer → Git → GitHub → GitHub Actions → Test → Deploy → GitHub Pages
+    </p>
+
+    <h3>Why CI/CD?</h3>
+
+    <ul>
+      <li>Find errors early.</li>
+      <li>Automate repetitive tasks.</li>
+      <li>Improve software quality.</li>
+      <li>Deploy changes faster.</li>
+      <li>Reduce manual deployment errors.</li>
+    </ul>
+
+  </div>
+
+
+  <!-- Testing -->
+  <div id="testing" class="tab-content">
+
+    <h2>Automated Testing</h2>
+
+    <p>
+      Automated tests verify that the website contains the required
+      files and HTML elements before deployment.
+    </p>
+
+    <h3>Test Cases</h3>
+
+    <ul>
+      <li>Check that <strong>index.html</strong> exists.</li>
+      <li>Check that <strong>style.css</strong> exists.</li>
+      <li>Check that the HTML contains a title.</li>
+      <li>Check that the HTML contains an H1 heading.</li>
+      <li>Check that the viewport meta tag exists.</li>
+    </ul>
+
+    <h3>Testing Process</h3>
+
+    <p>
+      Code Push → Install Dependencies → Run Tests → Test Result
+    </p>
+
+    <p>
+      If all tests pass, the deployment stage can continue.
+      If a test fails, deployment is stopped.
+    </p>
+
+  </div>
+
+
+  <!-- GitHub Actions -->
+  <div id="workflow" class="tab-content">
+
+    <h2>GitHub Actions</h2>
+
+    <p>
+      GitHub Actions is used to automate the CI/CD workflow.
+      The workflow is defined using a YAML configuration file.
+    </p>
+
+    <h3>Workflow Stages</h3>
+
+    <ol>
+      <li>Checkout the repository.</li>
+      <li>Set up Node.js.</li>
+      <li>Install project dependencies.</li>
+      <li>Run automated test cases.</li>
+      <li>Deploy the website if tests pass.</li>
+    </ol>
+
+    <h3>Workflow Structure</h3>
+
+    <p>
+      Push → GitHub Actions → Test → Pass → Deploy
+    </p>
+
+    <p>
+      Push → GitHub Actions → Test → Fail → Deployment Stopped
+    </p>
+
+  </div>
+
+
+  <!-- Instructable -->
+  <div id="instructable" class="tab-content">
+
+    <h2>Instructable: GitHub Actions & GitHub Pages</h2>
+
+    <h3>Step 1: Create a GitHub Repository</h3>
+
+    <p>
+      Create a repository on GitHub and upload the HTML and CSS files.
+    </p>
+
+    <h3>Step 2: Push the Code</h3>
+
+    <p>
+      Commit and push the website files to the GitHub repository.
+    </p>
+
+    <h3>Step 3: Configure GitHub Actions</h3>
+
+    <p>
+      Create a YAML workflow inside the
+      <strong>.github/workflows</strong> directory.
+    </p>
+
+    <h3>Step 4: Add Test Cases</h3>
+
+    <p>
+      Automated tests are executed to verify that the website
+      is valid before deployment.
+    </p>
+
+    <h3>Step 5: Deploy using GitHub Pages</h3>
+
+    <p>
+      After the workflow completes successfully, the website is
+      deployed using GitHub Pages.
+    </p>
+
+    <h3>Result</h3>
+
+    <p>
+      New changes pushed to the repository automatically trigger
+      the CI/CD pipeline.
+    </p>
+
+  </div>
+
+
+  <!-- Contact -->
+  <div id="contact" class="tab-content">
+
+    <h2>Contact</h2>
+
+    <p>
+      <strong>Student:</strong> Tanisha Mathur
+    </p>
+
+    <p>
+      <strong>University:</strong> PES University
+    </p>
+
+    <p>
+      <strong>Course:</strong> Software Engineering & DevOps
+    </p>
+
+    <p>
+      This website was created as part of a CI/CD and GitHub Actions
+      workshop.
+    </p>
+
+  </div>
+
+</main>
+```
+
+  </div>
+
   <script>
+
     function showTab(tabId) {
 
       document.querySelectorAll('.tab-content')
@@ -139,7 +357,8 @@
       document.querySelectorAll('.tab-btn')
         .forEach(b => b.classList.remove('active'));
 
-      const targetContent = document.getElementById(tabId);
+      const targetContent =
+        document.getElementById(tabId);
 
       if (targetContent) {
         targetContent.classList.add('active');
@@ -147,12 +366,16 @@
 
       const targetBtn =
         Array.from(document.querySelectorAll('.tab-btn'))
-        .find(b => b.getAttribute('onclick')?.includes(tabId));
+        .find(b =>
+          b.getAttribute('onclick')?.includes(tabId)
+        );
 
       if (targetBtn) {
         targetBtn.classList.add('active');
       }
+
     }
+
   </script>
 
 </body>
