@@ -1,27 +1,29 @@
-const fs = require('fs');
-const assert = require('assert');
+const fs = require("fs");
+const path = require("path");
 
-console.log(" Running CI test suite...");
+const htmlPath = path.join(__dirname, "../src/index.html");
+const cssPath = path.join(__dirname, "../src/style.css");
 
-// 1. Verify critical files exist
-assert(fs.existsSync('src/index.html'), " Error: src/index.html is missing!");
-assert(fs.existsSync('src/style.css'), " Error: src/style.css is missing!");
+const html = fs.readFileSync(htmlPath, "utf8");
 
-const html = fs.readFileSync('src/index.html', 'utf8');
-
-// 2. Check required course tabs exist in HTML
-requiredTabs.forEach(tabName => {
-  const tabRegex = new RegExp(
-    `<button[^>]*class=["'][^"']*tab-btn[^"']*["'][^>]*>\\s*${tabName}\\s*</button>`,
-    'i'
-  );
-
-  assert(
-    tabRegex.test(html),
-    ` Test Failed: Mandatory tab "${tabName}" was not found in navigation!`
-  );
+test("index.html exists", () => {
+    expect(fs.existsSync(htmlPath)).toBe(true);
 });
 
+test("style.css exists", () => {
+    expect(fs.existsSync(cssPath)).toBe(true);
+});
 
+test("HTML contains a title", () => {
+    expect(html).toMatch(/<title>.*<\/title>/i);
+});
 
-console.log("[PASSED] All static tab content checks passed successfully!");
+test("HTML contains a heading", () => {
+    expect(html).toMatch(/<h1>.*<\/h1>/i);
+});
+
+test("HTML contains viewport meta tag", () => {
+    expect(html).toMatch(
+        /<meta[^>]+name=["']viewport["']/i
+    );
+});

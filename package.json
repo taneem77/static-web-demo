@@ -1,7 +1,11 @@
+
 {
-  "name": "static-web-cicd",
+  "name": "static-web-demo",
   "version": "1.0.0",
   "scripts": {
-    "test": "node tests/site.test.js"
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }
