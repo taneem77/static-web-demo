@@ -8,9 +8,9 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 500px;
   margin: 0 auto;
-  background: #ffffff;
+  background: #fffeff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
   overflow: hidden;
@@ -27,8 +27,8 @@ header {
 
 .tabs {
   display: flex;
-  background: #e4e6eb;
-  border-bottom: 2px solid #ccc;
+  background: #e476eb;
+  border-bottom: 2px solid #ecc;
   overflow-x: auto;
 }
 
