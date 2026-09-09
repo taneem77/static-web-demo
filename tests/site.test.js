@@ -1,11 +1,11 @@
 const fs = require('fs');
 const assert = require('assert');
 
-console.log("🔍 Running CI test suite...");
+console.log(" Running CI test suite...");
 
 // 1. Verify critical files exist
-assert(fs.existsSync('src/index.html'), "❌ Error: src/index.html is missing!");
-assert(fs.existsSync('src/style.css'), "❌ Error: src/style.css is missing!");
+assert(fs.existsSync('src/index.html'), " Error: src/index.html is missing!");
+assert(fs.existsSync('src/style.css'), " Error: src/style.css is missing!");
 
 const html = fs.readFileSync('src/index.html', 'utf8');
 
@@ -18,7 +18,7 @@ requiredTabs.forEach(tabName => {
 
   assert(
     tabRegex.test(html),
-    `❌ Test Failed: Mandatory tab "${tabName}" was not found in navigation!`
+    ` Test Failed: Mandatory tab "${tabName}" was not found in navigation!`
   );
 });
 
